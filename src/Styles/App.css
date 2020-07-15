@@ -1,0 +1,350 @@
+
+html,
+body,
+.root
+{
+    height: 100%;
+}
+
+body
+{
+    line-height: 1.5;
+}
+
+body,
+.app
+{
+    background: black;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+div,
+span
+{
+    color: white;
+}
+
+.Fill,
+.Fill_Y
+{
+    height: 100%;
+}
+
+.Fill,
+.Fill_X
+{
+    width: 100%;
+}
+
+.Flex,
+.Flex_X,
+.Flex_Y
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Flex_X
+{
+    flex-direction: row;
+}
+
+.Flex_Y
+{
+    flex-direction: column;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    padding: 0 20px 0 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    background-color: #EEEEEE;
+    color: black;
+}
+
+a.active,
+a.active:hover
+{
+    background: black;
+    color: lightskyblue;
+}
+
+button
+{
+    padding: 10px 20px 10px 20px;
+}
+
+/* */
+.Error > div
+{
+    margin: 20px 0 0 0;
+    font-size: 32px;
+    color: tomato;
+}
+
+/* */
+.PercentBar,
+.PercentBar > *
+{
+    width: 200px;
+    height: 30px;
+}
+.PercentBar
+{
+    display: flex;
+}
+.PercentBar > div
+{
+    margin-top: 4px;
+    margin-left: -100%;
+}
+.PercentBar > div > *
+{
+    display: inline-block;
+    color: black;
+}
+.PercentBar > div > *:first-child
+{
+    float: left;
+    margin: 0 0 0 10px;
+}
+.PercentBar > div > *:last-child
+{
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+/* */
+.Top
+{
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: black;
+}
+
+.Dashboard {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.UserPanel
+{
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.UserPanel button
+{
+    margin-left: 10px;
+    padding: 10px;
+}
+
+/* */
+.Login
+{
+    margin: 50px 0 0 0;
+}
+
+.Login > *
+{
+    margin: 20px 0 0 0;
+}
+
+.Login .Input
+{
+    width: 200px;
+}
+
+/* */
+.PollCreate
+{
+    margin: 20px 0 0 0;
+}
+
+.PollCreate > *
+{
+    margin: 20px 0 0 0;
+}
+
+.PollCreate .Input
+{
+    width: 200px !important;
+}
+
+/* */
+.LeaderboardList
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LeaderboardList li
+{
+    width: 360px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.Leaderboard
+{
+    margin: 20px 0 0 0;
+}
+
+.Leaderboard .Flex_Y
+{
+    margin: 0 0 0 20px;
+    align-items: center;
+}
+
+.Leaderboard .Mid
+{
+    align-items: flex-end;
+}
+
+.Leaderboard .End
+{
+    font-weight: bolder;
+}
+
+/* */
+
+.PollView > .PollCategories > button
+{
+    width: 180px;
+    margin: 20px 20px 0 0;
+    padding: 10px 0 10px 0;
+}
+
+/* */
+
+.PollItem
+{
+    margin: 20px 0 0 0;
+}
+
+.PollItem > *
+{
+    padding: 10px 0 0 20px;
+    width: 400px;
+}
+
+.PollItem > .Flex_X
+{
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.PollItem > .Flex_X > .Flex_Y
+{
+    margin: 0 0 0 20px;
+    align-items: flex-start;
+}
+
+.PollItem > .Flex_X > .Flex_Y > *
+{
+    margin: 0 0 20px 0;
+}
+
+.PollItem a
+{
+    width: 200px;
+    border: 1px solid skyblue;
+    padding: 10px 0 10px 0;
+    color: skyblue;
+}
+
+.PollItem a:hover
+{
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+/* */
+.PollResult
+{
+    margin: 20px 0 0 0;
+}
+
+.PollResult > .Flex_Y,
+.PollResult > .Flex_Y > .Flex_X
+{
+    align-items: flex-start;
+}
+
+.PollResult > .Flex_Y > .Flex_X > *
+{
+    margin: 10px 10px 0 0;
+}
+
+/* */
+.PollAnswer
+{
+    margin: 20px 0 0 0;
+}
+
+.PollAnswer form,
+.PollAnswer > .Flex_Y,
+.PollAnswer > .Flex_Y > .Flex_X
+{
+    align-items: flex-start;
+}
+
+.PollAnswer > .Flex_Y > .Flex_X > *
+{
+    margin: 10px 10px 0 0;
+}
+
+.PollAnswer form > *
+{
+    margin: 10px 0 0 10px;
+}
+
+.PollAnswer form > button
+{
+    width: 160px;
+}
